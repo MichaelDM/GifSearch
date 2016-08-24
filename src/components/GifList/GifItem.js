@@ -41,7 +41,6 @@ class GifItem extends Component {
 
   removeFavoriteHelper = gif => {
     this.setState({favorite: false});
-    console.log('this.props is ', this.props);
     this.props.removeFavoriteGif(gif);
   }
 

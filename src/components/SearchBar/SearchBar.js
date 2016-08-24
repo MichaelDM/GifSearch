@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 class SearchBar extends Component {
 
   onInputChange = e => {
-    // console.log('value is', e.target);
-    // console.log(e.nativeEvent);
     this.props.requestGifs(this.props.term);
     this.props.searchTerm(e.target.value);
   }

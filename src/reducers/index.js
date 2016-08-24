@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import GifsReducer from './gifs';
-import ModalReducer from './modal';
+import GifsReducer from './gifsReducer';
+import ModalReducer from './modalReducer';
 import { reducer as FormReducer } from 'redux-form';
-import AuthReducer from './auth';
-import FavoritesReducer from './favorites';
-import SearchTermReducer from './searchTerm';
+import AuthReducer from './authReducer';
+import FavoritesReducer from './favoritesReducer';
+import SearchTermReducer from './searchTermReducer';
 
 const rootReducer = combineReducers({
   form: FormReducer,
